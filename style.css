@@ -1,0 +1,190 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #eef3ef;
+  color: #1c2b22;
+  scroll-behavior: smooth;
+}
+/* ================= NAVBAR ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+.navbar nav a {
+  position: relative;
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1c2b22;
+  transition: 0.3s ease;
+}
+.navbar nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: linear-gradient(90deg,#1c5c3c,#c9a227);
+  transition: 0.3s ease;
+}
+.navbar nav a:hover::after {
+  width: 100%;
+}
+.logo-img {
+  width: 35px;
+  margin-right: 10px;
+}
+.navbar a {
+  text-decoration: none;
+}
+.reserva-btn {
+  background: linear-gradient(135deg,#1c5c3c,#c9a227);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.reserva-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+}
+.hero-image img {
+  width: 500px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+.hero h1 span {
+  color: #c9a227;
+}
+.badge {
+  background: #e6f2ea;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+/* ================= BOTONES GENERALES ================= */
+.hero-buttons a,
+.buttons a,
+.consultoria a {
+  text-decoration: none;
+  display: inline-block;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #1c5c3c, #2f7a55);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(28, 92, 60, 0.25);
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(28, 92, 60, 0.35);
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid #1c5c3c;
+  color: #1c5c3c;
+  padding: 12px 28px;
+  border-radius: 40px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.btn-outline:hover {
+  background: #1c5c3c;
+  color: white;
+  transform: translateY(-3px);
+}
+/* ================= CURSOS ================= */
+.courses {
+  padding: 80px 8%;
+  text-align: center;
+}
+.card-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.course-card {
+  background: white;
+  padding: 35px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+.course-card:hover {
+  transform: translateY(-6px);
+}
+.levels button {
+  margin: 5px;
+  background: #f0f5f2;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 25px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.levels button:hover {
+  background: linear-gradient(135deg,#1c5c3c,#2f7a55);
+  color: white;
+}
+.levels button.active {
+  background: linear-gradient(135deg,#1c5c3c,#2f7a55);
+  color: white;
+}
+.silabo-box {
+  margin: 20px 0;
+  background: #f7faf8;
+  padding: 20px;
+  border-radius: 15px;
+  min-height: 100px;
+  transition: 0.3s ease;
+}
+/* ================= CONSULTORIA ================= */
+.consultoria {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  background: linear-gradient(135deg,#e6f2ea,#dce9df);
+  flex-wrap: wrap;
+}
+.consult-image img {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+/* ================= FOOTER ================= */
+footer {
+  background: #1c2b22;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
