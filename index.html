@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mati's Support</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo-area">
+      <img src="TU_LOGO_AQUI.png" class="logo-img">
+      <span>Mati's Support</span>
+    </div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#consultoria">Consultoría</a>
+    </nav>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4C6eBHXSCckaUyhsS9lm5RNEDY1E4D9AXssVdaM5bltvacA/viewform" target="_blank">
+      <button class="reserva-btn">Reserva →</button>
+    </a>
+  </header>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <span class="badge">Nueva convocatoria 2025</span>
+      <h1>Impulsa tu <span>Talento Académico</span></h1>
+      <p>Programas de alto nivel en inglés y matemáticas universitarias.</p>
+      <div class="hero-buttons">
+        <a href="#cursos"><button class="btn-primary">Ver Cursos →</button></a>
+        <a href="#consultoria"><button class="btn-outline">Consultar Servicios</button></a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="TU_IMAGEN_HERO.jpg">
+    </div>
+  </section>
+  <!-- CURSOS -->
+  <section id="cursos" class="courses">
+    <h2>Formación de Elite</h2>
+    <div class="card-container">
+      <!-- INGLES -->
+      <div class="course-card">
+        <h3>Formación en Inglés Académico</h3>
+        <div class="levels" data-curso="ingles">
+          <button data-nivel="basico" class="active">Básico</button>
+          <button data-nivel="intermedio">Intermedio</button>
+          <button data-nivel="avanzado">Avanzado</button>
+        </div>
+        <div id="silabo-ingles" class="silabo-box"></div>
+        <div class="buttons">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4C6eBHXSCckaUyhsS9lm5RNEDY1E4D9AXssVdaM5bltvacA/viewform" target="_blank">
+            <button class="btn-primary">Inscribirse</button>
+          </a>
+          <button class="btn-outline" onclick="verSilabo('ingles')">Ver Sílabos</button>
+        </div>
+      </div>
+      <!-- MATEMATICAS -->
+      <div class="course-card">
+        <h3>Nivelación en Matemática Superior</h3>
+        <div class="levels" data-curso="mate">
+          <button data-nivel="basico" class="active">Básico</button>
+          <button data-nivel="intermedio">Intermedio</button>
+          <button data-nivel="avanzado">Avanzado</button>
+        </div>
+        <div id="silabo-mate" class="silabo-box"></div>
+        <div class="buttons">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd4C6eBHXSCckaUyhsS9lm5RNEDY1E4D9AXssVdaM5bltvacA/viewform" target="_blank">
+            <button class="btn-primary">Inscribirse</button>
+          </a>
+          <button class="btn-outline" onclick="verSilabo('mate')">Ver Sílabos</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CONSULTORIA -->
+  <section id="consultoria" class="consultoria">
+    <div class="consult-text">
+      <h2>Consultoría y Soporte Tecnológico</h2>
+      <p>Optimización de hardware, instalación de software, recuperación de datos y asesoría especializada para estudiantes universitarios.</p>
+      <ul>
+        <li>Optimización de Hardware</li>
+        <li>Instalación de Software</li>
+        <li>Recuperación de Datos</li>
+        <li>Asesoría en Compras</li>
+      </ul>
+      <a href="https://wa.me/51963418502?text=Hola,%20necesito%20asistencia%20técnica%20🔧" target="_blank">
+        <button class="btn-primary">Solicitar Asistencia</button>
+      </a>
+    </div>
+    <div class="consult-image">
+      <img src="TU_IMAGEN_CONSULTORIA.jpg">
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2025 Mati's Support. Todos los derechos reservados.</p>
+      <p>Formación Académica y Soluciones Tecnológicas para Universitarios.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
